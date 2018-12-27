@@ -1,0 +1,42 @@
+{
+  "title": "Odoo 小书",
+  "description": "",
+  "language": "zh-hans",
+  "plugins": [
+    "anchor-navigation-ex",
+    "-lunr",
+    "-search",
+    "search-plus",
+    "expandable-chapters",
+    "-sharing",
+    "disqus",
+    "github-buttons",
+    "editlink",
+    "prism",
+    "-highlight",
+    "splitter",
+    "custom-favicon"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "showLevel": false
+    },
+    "disqus": {
+      "shortName": "Odoo Book"
+    },
+    "github-buttons": {
+      "buttons": [{
+        "user": "TNK-Studio",
+        "repo": "Odoo-Book",
+        "type": "star",
+        "size": "normal",
+        "count": true
+      }]
+    },
+    "editlink": {
+      "base": "https://github.com/TNK-Studio/Odoo-Book/edit/master",
+      "label": "编辑本页"
+    },
+    "favicon": "assets/images/favicon.ico"
+  }
+}
