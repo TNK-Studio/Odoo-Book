@@ -1,12 +1,12 @@
 # Odoo Book 
-[![](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
-[![](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 
+[![Odoo 12](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 
 
 # 🤓Odoo 小书
 
 ## 这本书适合什么样的人群？
 
-如果你是一名 Python 开发人员并且有一定的 Web 开发经验，希望学习和入门 Odoo 框架来开发高效的业务应用程序，那么这本书可以给予到你一定的帮助。
+如果你是一名 Python 开发人员并且有一定的 Web 开发经验，希望学习和入门 Odoo 框架来高效开发业务应用，这本书可以给予你一些参考及帮助。
 
 ## 为了更好的阅读这本书
 
@@ -45,8 +45,7 @@
 [第十章](#)，*Web 控制器 Web Controller* —— 作为一个 Web 框架，肯定包含请求 (Request) 和响应（Response）的处理，
 利用 Odoo 的 Web 控制器实现简单的接口，并且结合 Jinja2 模版引擎渲染一个简单的非 Odoo 视图的 Web 页面。
 
-[第十一章](#)，*模版引擎 QWeb* —— QWeb 是 Odoo 框架的原生模版引擎，利用 XML 生成 HTML 片段和页面，这一章节我们将学习 QWeb 的基础语法，
-并替换 Jinja2 模版引擎渲染的 Web 页面。 
+[第十一章](#)，*模版引擎 QWeb* —— QWeb 是 Odoo 框架的原生模版引擎，利用 XML 生成 HTML 片段和页面，这一章节我们将学习 QWeb 的基础语法，并替换 Jinja2 模版引擎渲染的 Web 页面。 
 
 [第十二章](#), *国际化 I18n* —— 
 
@@ -55,6 +54,7 @@
 本书中使用了如下文本约定。
 
 * 一段代码文本如下：
+
     ```xml
     <?xml version="1.0"?> 
     <odoo> 
@@ -75,9 +75,9 @@
         ]”
     ```
 
-* 菜单或对话框中出现的单词会加上双引号如：  
+* 菜单或对话框中出现的单词会加上直角引号如：  
 
-    在Web客户端中，访问 ”应用程序“ 顶部菜单并选择 ”更新应用程序列表“ 菜单选项。
+    在Web客户端中，访问「应用程序」顶部菜单并选择「更新应用程序列表」菜单选项。
     
 * 其他说明
     
