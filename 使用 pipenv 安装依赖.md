@@ -7,7 +7,7 @@
 本书强烈建议使用 pipenv 来管理环境依赖来养成良好的环境管理习惯，
 当然你也可以跳过这一章节直接使用 pip 以及 `odoo_dev` 中的 `requirements.txt` 来安装依赖，若熟悉pipenv可以跳过这一章节。
 
-当然安装以来之前需要删除 requirements.txt中多余的最后一行 pypiwin32 ; sys_platform == 'win32' 并保存。
+安装之前需要删除 requirements.txt 中多余的最后一行 pypiwin32 ; sys_platform == 'win32' 并保存。
 
 ## 初始化 Pipfile
 
