@@ -17,6 +17,9 @@ sudo curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/p
 export PATH="/root/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 ```
 使用 bash 命令行则加入到 `~/.bashrc` 文件末尾，并执行 `source ~/.bashrc`。
 使用 zsh 命令行则加入到 `~/.zshrc` 文件末尾，并执行 `source ~/.zshrc`。
@@ -37,7 +40,7 @@ pyenv global 3.6.5
 ```shell
 sudo apt-get install -y gcc make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev
+xz-utils tk-dev libffi-dev liblzma-dev libldap2-dev libsasl2-dev
 ```
 
 💡若使用`pyenv install 3.6.5`安装速度过慢，可以先在搜狐的镜像下载源码包，放到 pyenv 的 cache 目录后在执行安装指定版本，例如：
