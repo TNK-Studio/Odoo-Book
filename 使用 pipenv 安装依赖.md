@@ -104,19 +104,19 @@ python_version = "3.6"
 安装 Pipfile 中的依赖我们只需要执行
 
 ```
-pipenv install
+$ pipenv install
 ```
 
 最后再执行以下命令就可以激活我们的虚拟环境了
 
 ```
-pipenv shell
+$ pipenv shell
 ```
 
 ⚠️ 若使用 Ubuntu 系统且依赖中的 `pyldap` 安装失败显示 `fatal error: lber.h: No such file or directory`，则需要先安装以下库：
 
 ```shell
-sudo apt-get install -y libldap2-dev libsasl2-dev
+$ sudo apt-get install -y libldap2-dev libsasl2-dev
 ```
 
 💡 若执行 `pipenv install` 速度过慢，可以将 Pipfile 中的 `source url` 修改为：
