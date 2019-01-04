@@ -7,14 +7,14 @@
 ## Ubuntu 安装 Git
 
 ```shell
-sudo apt-get update
-sudo apt-get install git
+$ sudo apt-get update
+$ sudo apt-get install git
 ```
 
 ## Mac 安装 Git
 
 ```
-brew install git
+$ brew install git
 ```
 
-💡Mac 安装 Git 使用的是 `Homebrew` —— `macOS 缺失的软件包的管理器`，安装方法详见[Homebrew 官网](https://brew.sh/index_zh-cn.html)。
+💡 Mac 安装 Git 使用的是 `Homebrew` —— `macOS 缺失的软件包的管理器`，安装方法详见[Homebrew 官网](https://brew.sh/index_zh-cn.html)。
