@@ -1,27 +1,27 @@
 # 使用 pipenv 安装依赖
 
-> Pipenv会自动帮你管理虚拟环境和依赖文件，并且提供了一系列命令和选项来帮助你实现各种依赖和环境管理相关的操作。  
+> Pipenv 会自动帮你管理虚拟环境和相关依赖，并且提供了一系列命令和选项来帮助你实现各种依赖和环境管理相关的操作。  
 >
 > 简而言之，它更方便、完善和安全。
   
-本书强烈建议使用 pipenv 来管理环境依赖来养成良好的环境管理习惯，
-当然你也可以跳过这一章节直接使用 pip 以及 `odoo_dev` 中的 `requirements.txt` 来安装依赖，若熟悉pipenv可以跳过这一章节。
+本书强烈建议使用 pipenv 来管理环境依赖来养成良好的环境管理习惯，当然你也可以跳过这一章节直接使用 pip 以及 `odoo_dev` 中的 `requirements.txt` 来安装依赖，若熟悉 pipenv 可以跳过这一章节。
 
-安装之前需要删除 requirements.txt 中多余的最后一行 pypiwin32 ; sys_platform == 'win32' 并保存。
+安装之前需要删除 requirements.txt 中的最后一行 `pypiwin32 ; sys_platform == 'win32'` 并保存。
 
 ## 初始化 Pipfile
 
-首先我们输入以下命令来生成 `Pipfile`：
+首先输入以下命令生成 `Pipfile`：
+
 ```shell
-pipenv --python 3.6.5
-```
-```
+$ pipenv --python 3.6.5
 Warning: Python 3.6.5 was not found on your system...
 Would you like us to install CPython 3.6.5 with pyenv? [Y/n]:
 ```
-若出现以上提示则可以参考[安装 Python3](安装 Python3.html)来安装对应的 Python 版本，当然你也可以直接输入 `Y` 让他自己使用 pyenv 来安装。
 
-执行成功后会有以下类似输出：
+若出现以上提示则可以参考[安装 Python3](安装 Python3.html)来安装对应的 Python 版本，当然你也可以直接输入 `Y` 使用 pyenv 来安装。
+
+虚拟环境创建成功后会有类似的内容输出：
+
 ```
 Creating a virtualenv for this project…
 Pipfile: /root/odoo_dev/Pipfile
@@ -41,10 +41,10 @@ Warning: Your Pipfile now contains pinned versions, if your requirements.txt did
 We recommend updating your Pipfile to specify the "*" version, instead.
 ```
 
-Pipenv 会自动在 `~/.local/share/virtualenvs` 目录下新建一个虚拟环境 `virtualenv` 目录，目录名一般为`odoo_dev-*`，
-并且若在当前目录下存在 `requirements.txt` 文件时，会自动将其写入到 `Pipfile` 中。   
+Pipenv 会自动在 `~/.local/share/virtualenvs` 目录下新建一个虚拟环境 `virtualenv` 目录，目录名一般为`odoo_dev-*`，若在当前目录下存在 `requirements.txt` 文件时，会自动安装里面的库及依赖，并写入到 `Pipfile` 中。   
 
-可以使用 cat 查看一下 Pipfile 中的内容：  
+可以使用 cat 查看一下 Pipfile 中的内容：
+
 ```
 [[source]]
 name = "pypi"
@@ -101,22 +101,26 @@ python_version = "3.6"
 
 ## 安装依赖 激活虚拟环境
 
-安装 Pipfile 中的依赖我们只需要执行。  
+安装 Pipfile 中的依赖我们只需要执行
+
 ```
 pipenv install
 ```
 
-最后在执行以下命令就可以激活我们的虚拟环境了。  
+最后再执行以下命令就可以激活我们的虚拟环境了
+
 ```
 pipenv shell
 ```
 
-⚠️若使用 Ubuntu 系统且依赖中的 `pyldap` 安装失败显示 `fatal error: lber.h: No such file or directory`，则需要安装依赖：
+⚠️ 若使用 Ubuntu 系统且依赖中的 `pyldap` 安装失败显示 `fatal error: lber.h: No such file or directory`，则需要先安装以下库：
+
 ```shell
 sudo apt-get install -y libldap2-dev libsasl2-dev
 ```
 
-💡若执行 `pipenv install` 速度过慢，可以将 Pipfile 中的 `source url` 修改为：
+💡 若执行 `pipenv install` 速度过慢，可以将 Pipfile 中的 `source url` 修改为：
+
 ```
 url = "http://mirrors.aliyun.com/pypi/simple"
 ```
