@@ -10,6 +10,7 @@
     * [获取 Odoo 源码](获取 Odoo 源码.md)
     * [安装 Python3](安装 Python3.md)
     * [使用 pipenv 安装依赖](使用 pipenv 安装依赖.md)
+    * [启动 Odoo](启动 Odoo.md)
 * [创建第一个 Odoo 应用](创建第一个 Odoo 应用.md)
     * [启动脚本 odoo-bin](启动脚本 odoo-bin.md)
     * [常用参数介绍](常用参数介绍.md)
