@@ -18,6 +18,11 @@
     "custom-favicon"
   ],
   "pluginsConfig": {
+    "fontsettings": {
+      "theme": "sepia",
+      "family": "sans",
+      "size": 2
+    },
     "anchor-navigation-ex": {
       "showLevel": false
     },
