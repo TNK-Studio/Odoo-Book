@@ -1,6 +1,7 @@
-# Odoo Book 
 [![Odoo 12](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
-[![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) 
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![](https://travis-ci.org/TNK-Studio/Odoo-Book.svg?branch=master)](https://travis-ci.org/TNK-Studio/Odoo-Book) 
+[![](http://progressed.io/bar/8?title=progress)](https://travis-ci.org/TNK-Studio/Odoo-Book) 
 
 # 🤓Odoo 小书
 
