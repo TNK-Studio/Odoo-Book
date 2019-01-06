@@ -37,7 +37,7 @@ Python 安装成功后，可以使用以下命令来切换全局的 Python 版�
 
 ```shell
 $ pyenv global 3.6.5
-```   
+```
 
 ⚠️ 若使用 Ubuntu 请确保系统中有 Python 依赖，命令来自[Common build problems](https://github.com/pyenv/pyenv/wiki/Common-build-problems)
 
