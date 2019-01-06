@@ -22,7 +22,7 @@ Would you like us to install CPython 3.6.5 with pyenv? [Y/n]:
 
 虚拟环境创建成功后会有类似的内容输出：
 
-```
+```plain
 Creating a virtualenv for this project…
 Pipfile: /root/odoo_dev/Pipfile
 Using /root/.pyenv/versions/3.6.5/bin/python3.6m (3.6.5) to create virtualenv…
@@ -41,11 +41,11 @@ Warning: Your Pipfile now contains pinned versions, if your requirements.txt did
 We recommend updating your Pipfile to specify the "*" version, instead.
 ```
 
-Pipenv 会自动在 `~/.local/share/virtualenvs` 目录下新建一个虚拟环境 `virtualenv` 目录，目录名一般为`odoo_dev-*`，若在当前目录下存在 `requirements.txt` 文件时，会自动安装里面的库及依赖，并写入到 `Pipfile` 中。   
+Pipenv 会自动在 `~/.local/share/virtualenvs` 目录下新建一个虚拟环境 `virtualenv` 目录，目录名一般为`odoo_dev-*`，若在当前目录下存在 `requirements.txt` 文件时，会自动安装里面的库及依赖，并写入到 `Pipfile` 中。  
 
 可以使用 cat 查看一下 Pipfile 中的内容：
 
-```
+```plain
 [[source]]
 name = "pypi"
 url = "https://pypi.org/simple"
@@ -90,7 +90,6 @@ vobject = "==0.9.3"
 xlsxwriter = "==0.9.3"
 xlwt = "==1.3.*"
 xlrd = "==1.0.0"
-pypiwin32 = "*"
 Jinja2 = "==2.8.1"
 MarkupSafe = "==0.23"
 Werkzeug = "==0.11.15"
@@ -103,13 +102,13 @@ python_version = "3.6"
 
 安装 Pipfile 中的依赖我们只需要执行
 
-```
+```plain
 $ pipenv install
 ```
 
 最后再执行以下命令就可以激活我们的虚拟环境了
 
-```
+```plain
 $ pipenv shell
 ```
 
@@ -121,6 +120,6 @@ $ sudo apt-get install -y libldap2-dev libsasl2-dev
 
 💡 若执行 `pipenv install` 速度过慢，可以将 Pipfile 中的 `source url` 修改为：
 
-```
+```plain
 url = "http://mirrors.aliyun.com/pypi/simple"
 ```

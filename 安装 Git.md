@@ -13,7 +13,7 @@ $ sudo apt-get install git
 
 ## Mac 安装 Git
 
-```
+```plain
 $ brew install git
 ```
 

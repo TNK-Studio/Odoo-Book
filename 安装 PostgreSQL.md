@@ -1,8 +1,8 @@
 # 安装 PostgreSQL
 
-> PostgreSQL是自由的对象-关系型数据库服务器（数据库管理系统），在灵活的BSD许可证下发行。    
+> PostgreSQL 是自由的对象-关系型数据库服务器（数据库管理系统），在灵活的 BSD 许可证下发行。
 >  
-> 它在其他开放源代码数据库系统（比如MySQL和Firebird），和专有系统（比如Oracle、Sybase、IBM的DB2和Microsoft SQL Server）之外，为用户又提供了一种选择。
+> 它在其他开放源代码数据库系统（比如 MySQL 和 Firebird），和专有系统（比如 Oracle、Sybase、IBM 的 DB2 和 Microsoft SQL Server）之外，为用户又提供了一种选择。
 
 ## Ubuntu 安装 PostgreSQL
 
@@ -56,13 +56,13 @@ $ createdb odoo -U odoo -W
 
 ⚠️ 若出现以下错误：
 
-```
+```plain
 FATAL:  Peer authentication failed for user "odoo"
 ```
 
 则需要将 `pg_hba.conf` 的配置：
 
-```
+```plain
 # cat pg_hba.conf
 ...
 # "local" is for Unix domain socket connections only
@@ -75,7 +75,7 @@ host    all             all             ::1/128                 ident
 
 修改为：
 
-```
+```plain
 # cat pg_hba.conf
 ...
 # "local" is for Unix domain socket connections only
