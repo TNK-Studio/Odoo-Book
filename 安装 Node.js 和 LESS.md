@@ -1,4 +1,4 @@
-# 安装 Node.js 和 Less
+# 安装 Node.js 和 LESS
 
 > Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
 >
