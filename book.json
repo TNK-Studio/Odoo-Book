@@ -9,10 +9,8 @@
     "search-plus",
     "expandable-chapters",
     "-sharing",
-    "disqus",
     "github-buttons",
     "editlink",
-    "prism",
     "-highlight",
     "splitter",
     "custom-favicon"
@@ -25,9 +23,6 @@
     },
     "anchor-navigation-ex": {
       "showLevel": false
-    },
-    "disqus": {
-      "shortName": "odoobook"
     },
     "github-buttons": {
       "buttons": [{
