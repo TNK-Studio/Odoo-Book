@@ -62,4 +62,3 @@
   * [结合 Jinja2](结合Jinja2.md)
 * [模版引擎 QWeb](模版引擎 QWeb.md)
 * [国际化 i18n](国际化 i18n.md)
-
