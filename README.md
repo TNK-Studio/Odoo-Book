@@ -108,4 +108,4 @@ Odoo 小书由 [TNK Studio](https://github.com/TNK-Studio) 成员共同编写，
 
 如果这本小书对您有帮助，欢迎投喂咖啡 ☕️ 给我们，激励我们输出更多优质内容，感谢支持 🎉
 
-![Donate](./assets/images/donate.jpg)
+<img src="./assets/images/donate.jpg" width="50%" alt="Donate" />
