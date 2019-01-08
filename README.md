@@ -1,7 +1,7 @@
-# 🤓Odoo 小书
+# 🤓 Odoo 小书
 
 [![Odoo 12](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
-[![CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![](https://travis-ci.org/TNK-Studio/Odoo-Book.svg?branch=master)](https://travis-ci.org/TNK-Studio/Odoo-Book)
 [![](http://progressed.io/bar/8?title=progress)](https://github.com/TNK-Studio/Odoo-Book)
 
@@ -85,3 +85,27 @@
     ⚠️ 警告或重要说明起来像这样。  
   
     💡 提示和技巧看起来像这样。  
+
+## 声明
+
+[![CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+Odoo 小书由 [TNK Studio](https://github.com/TNK-Studio) 成员共同编写，采用 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 许可协议发布。
+
+您可以在遵守以下条件的前提下，自由地以任何形式共享本书：
+
+**署名** — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
+
+**非商业性使用** — 您不得将本作品用于商业目的。
+
+**禁止演绎** — 如果您再混合、转换、或者基于该作品创作，您不可以分发修改后的作品。
+
+## 联系我们
+
+如果你对本书有任何意见或建议，请在 [issues](https://github.com/TNK-Studio/Odoo-Book/issues) 中提交，欢迎批评和指正 👏
+
+## 支持我们
+
+如果这本小书对您有帮助，欢迎投喂咖啡 ☕️ 给我们，激励我们输出更多优质内容，感谢支持 🎉
+
+<img src="./assets/images/donate.jpg" width="50%" alt="Donate" />
