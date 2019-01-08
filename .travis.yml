@@ -11,9 +11,13 @@ before_install:
 
 install:
 - npm install gitbook-cli -g
+- npm install lint-md -g
+- npm install
 - gitbook install
 
 script:
+- lint-md .
+- node mdlint
 - gitbook build . ./build
 - echo "http://odoobook.tnk-studio.org" > ./build/CNAME
 

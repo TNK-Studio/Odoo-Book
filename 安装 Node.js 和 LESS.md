@@ -1,9 +1,8 @@
-# 安装 Node.js 和 Less
+# 安装 Node.js 和 LESS
 
-> Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。   
-> 
+> Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
+>
 > Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。
-  
 
 由于 Odoo 的样式文件使用 Less 语法编写，需要转译成 CSS，所以我们需要安装 Less 和 Node.js。
 
@@ -19,7 +18,7 @@ $ curl -L http://git.io/n-install | bash
 
 运行后将会在 home 目录生成一个名为 `n` 的文件夹，里面包含了 n 的文件和 使用 n 安装的不同版本的 Node.js。
 
-安装完成后提示需要重新打开终端或重新载入命令行配置文件。    
+安装完成后提示需要重新打开终端或重新载入命令行配置文件。  
 
 若使用 `bash` 命令行，则运行：
 
@@ -29,7 +28,7 @@ $ source ~/.bashrc
 
 若使用 `zsh` 则运行：
 
-```
+```plain
 $ source ~/.zshrc
 ```
 
@@ -41,7 +40,7 @@ $ n 10.15.0
 
 安装完成后，输入 n 和利用上下光标进行切换：
 
-```
+```plain
     node/8.15.0
   ο node/10.15.0
 ```
