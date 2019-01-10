@@ -5,7 +5,7 @@
 > 编译器来根据这份 specification 生成相应的代码，进行增、删、改、查数据库的操作。
 > 我们把这种模式称为"脚手架"，在脚手架上面去更高效的建造出强大的应用。
 
-用过 Django 的读者应该知道, Django 可以利用 manage.py startapp myapp 来生成一个 app 的目录结构，这就是一个脚手架。  
+用过 Django 的读者应该知道， Django 可以利用 manage.py startapp myapp 来生成一个 app 的目录结构，这就是一个脚手架。  
 
 同样的 Odoo 也有自己的脚手架，我们可以在命令行运行：
 
