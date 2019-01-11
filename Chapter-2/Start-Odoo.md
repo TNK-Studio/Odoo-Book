@@ -5,7 +5,7 @@
 运行该脚本之后会在`8069`默认端口启动 Odoo 服务，启动之前需要运行 `pipenv shell` 进入虚拟环境。  
 
 💡 如果是用 Pycharm 启动首先需要在 Preferences > Project > Project Interpreter > Add > Existing Environment 中
-将使用 pipenv 生成的 Python 添加进去，一般 pipenv 生成的虚拟环境目录在 `~/.local/share/virtualenvs/`，如果是按照[上一篇](使用 pipenv 安装依赖.md)生成的虚拟环境，
+将使用 pipenv 生成的 Python 添加进去，一般 pipenv 生成的虚拟环境目录在 `~/.local/share/virtualenvs/`，如果是按照[上一篇](/Chapter-2/Use-Pipenv-Installing-Dependencies.html)生成的虚拟环境，
 则目录则为 `~/.local/share/virtualenvs/odoo_env-*` (* 号为随机字符串)。
 
 运行 Odoo 启动脚本：  
@@ -64,7 +64,7 @@ db_user = odoo
 ...
 ```
 
-再次运行启动脚本启动 Odoo，这时已经可以成功访问[http://localhost:8069](http://localhost:8069)了，并且进入的是一个数据库选择页面，
+再次运行启动脚本启动 Odoo，这时已经可以成功访问 [http://localhost:8069](http://localhost:8069) 了，并且进入的是一个数据库选择页面，
 我们可以直接选择 odoo 数据库或者点击 「Manage Databases」跳转到数据库创建页面。  
 
 ![odoo-database](../assets/images/odoo-database.png)
@@ -72,4 +72,6 @@ db_user = odoo
 选择好数据库之后，就可以进入到 Odoo 的登陆界面了，默认的管理员账号密码均为 `admin`。  
 
 ![odoo-login-1](../assets/images/odoo-login-1.png)
+
+💡 为了方便的修改 Odoo 的配置文件，可以复制 ~/.odoorc 到项目根目录下如 ./odoorc.ini，执行时增加 `-c ./odoorc.ini` 参数指定配置文件。
 
