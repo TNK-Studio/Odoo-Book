@@ -2,3 +2,7 @@
     color: inherit;
     text-decoration:underline;
 }
+
+.gitbook-link {
+    display: none !important;
+}
