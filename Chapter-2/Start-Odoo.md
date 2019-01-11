@@ -5,7 +5,7 @@
 运行该脚本之后会在`8069`默认端口启动 Odoo 服务，启动之前需要运行 `pipenv shell` 进入虚拟环境。  
 
 💡 如果是用 Pycharm 启动首先需要在 Preferences > Project > Project Interpreter > Add > Existing Environment 中
-将使用 pipenv 生成的 Python 添加进去，一般 pipenv 生成的虚拟环境目录在 `~/.local/share/virtualenvs/`，如果是按照[上一篇](/Chapter-2/Use-Pipenv-Installing-Dependencies.html)生成的虚拟环境，
+将使用 pipenv 生成的 Python 添加进去，一般 pipenv 生成的虚拟环境目录在 `~/.local/share/virtualenvs/`，如果是按照[上一篇](/Chapter-2/Use-Pipenv-Installing-Dependencies.md)生成的虚拟环境，
 则目录则为 `~/.local/share/virtualenvs/odoo_env-*` (* 号为随机字符串)。
 
 运行 Odoo 启动脚本：  
@@ -54,7 +54,7 @@ $ ./odoo-bin -s
 2019-01-08 14:37:57,127 152 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
 ```
 
-然后编辑 ~/.odoorc 文件，将 `db_user` 和 `db_password` 分别修改为我们在[安装 PostgreSQL](/Chapter-2/Installing-PostgreSQL.html)时设置的用户 odoo 和这个用户的密码。  
+然后编辑 ~/.odoorc 文件，将 `db_user` 和 `db_password` 分别修改为我们在[安装 PostgreSQL](/Chapter-2/Installing-PostgreSQL.md)时设置的用户 odoo 和这个用户的密码。  
   
 ```plain
 ...
