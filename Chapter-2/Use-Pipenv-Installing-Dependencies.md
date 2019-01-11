@@ -18,7 +18,7 @@ Warning: Python 3.6.5 was not found on your system...
 Would you like us to install CPython 3.6.5 with pyenv? [Y/n]:
 ```
 
-若出现以上提示则可以参考[安装 Python3](安装 Python3.html)来安装对应的 Python 版本，当然你也可以直接输入 `Y` 使用 pyenv 来安装。
+若出现以上提示则可以参考[安装 Python3](/Chapter-2/Installing-Python3.html)来安装对应的 Python 版本，当然你也可以直接输入 `Y` 使用 pyenv 来安装。
 
 虚拟环境创建成功后会有类似的内容输出：
 

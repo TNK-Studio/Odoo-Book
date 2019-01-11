@@ -6,4 +6,4 @@
 
 这个追番剧应用的主要功能如下图所示：  
     
-![chasing-drama-1](assets/images/bangumi-1.jpeg)
+![chasing-drama-1](../assets/images/bangumi-1.jpeg)
