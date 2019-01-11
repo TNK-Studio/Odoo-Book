@@ -8,8 +8,7 @@
 
 打开 Odoo 配置文件 ~/.odoorc 并修改 addons_path，在参数的最后增加你的 Odoo-Book-Demo 的绝对路径，也就是 bangumi 的父路径，用逗号与前路径分隔开。  
 
-若已将配置文件复制到 odoo-dev/ 也可以使用相对路径，接下来我们都会使用项目目录下的 `odoorc.ini` 配置文件，
-请读者将 ~/.odoorc 复制到 odoo-dev 目录下并重命名为 odoorc.ini。  
+若已将配置文件复制到 odoo-dev/ 也可以使用相对路径，接下来我们都会使用项目目录下的 `odoorc.ini` 配置文件，请读者将 ~/.odoorc 复制到 odoo-dev 目录下并重命名为 odoorc.ini。  
 
 ```shell
 $ cat ./odoorc.ini
@@ -25,8 +24,7 @@ addons_path = ./addons,./Odoo-Book-Demo
 💡 除了点击「激活开发者模式」可以进入开发者模式外，我们可以通过在 URL 增加 `debug` 参数来进入开发者模式，
 如 [http://localhost:8069/web?debug](http://localhost:8069/web?debug)。  
 
-刷新本地模块列表后，我们再次搜索，发现依然没有搜索到 bangumi，原因是搜索框中的「应用」过滤把我们的应用给过滤掉了，
-点击「应用」的「x」将搜索过滤去掉后就可以看到我们的应用了。  
+刷新本地模块列表后，我们再次搜索，发现依然没有搜索到 bangumi，原因是搜索框中的「应用」过滤把我们的应用给过滤掉了，点击「应用」的「x」将搜索过滤去掉后就可以看到我们的应用了。  
 
 ![odoo-addons-2](../assets/images/odoo-addons-2.png)  
 
