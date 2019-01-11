@@ -3,7 +3,7 @@
 [![Odoo 12](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
 [![CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![](https://travis-ci.org/TNK-Studio/Odoo-Book.svg?branch=master)](https://travis-ci.org/TNK-Studio/Odoo-Book)
-[![](http://progressed.io/bar/8?title=progress)](https://github.com/TNK-Studio/Odoo-Book)
+[![](http://progressed.io/bar/12?title=progress)](https://github.com/TNK-Studio/Odoo-Book)
 
 ## 这本书适合什么样的人群
 
@@ -48,7 +48,7 @@
 
 [第十一章](/Chapter-11/Odoo-QWeb.html)，*模版引擎 QWeb* —— QWeb 是一个网页框架，在 Odoo 8 中被初次使用，XML 模板引擎是它的核心，这一章节我们将学习 QWeb 的基础语法，并替换 Jinja2 模版引擎渲染的 Web 页面。  
 
-[第十二章](/Chapter-12/Odoo-i18n.html)，*国际化 i18n* ——  
+[第十二章](/Chapter-12/Odoo-i18n.html)，*国际化 i18n* ——  为了能让我们的应用支持多语言，Odoo 也提供了国际化的解决方案，这一章节我们将学习如何让自己的应用实现国际化。
 
 ## 文本约定
 
