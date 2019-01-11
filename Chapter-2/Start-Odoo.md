@@ -54,7 +54,7 @@ $ ./odoo-bin -s
 2019-01-08 14:37:57,127 152 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
 ```
 
-然后编辑 ~/.odoorc 文件，将 `db_user` 和 `db_password` 分别修改为我们在(安装 PostgreSQL)[安装 PostgreSQL.md]时设置的用户 odoo 和这个用户的密码。  
+然后编辑 ~/.odoorc 文件，将 `db_user` 和 `db_password` 分别修改为我们在[安装 PostgreSQL](/Chapter-2/Installing-PostgreSQL.html)时设置的用户 odoo 和这个用户的密码。  
   
 ```plain
 ...
@@ -67,9 +67,9 @@ db_user = odoo
 再次运行启动脚本启动 Odoo，这时已经可以成功访问[http://localhost:8069](http://localhost:8069)了，并且进入的是一个数据库选择页面，
 我们可以直接选择 odoo 数据库或者点击 「Manage Databases」跳转到数据库创建页面。  
 
-![odoo-database](assets/images/odoo-database.png)
+![odoo-database](../assets/images/odoo-database.png)
 
 选择好数据库之后，就可以进入到 Odoo 的登陆界面了，默认的管理员账号密码均为 `admin`。  
 
-![odoo-login-1](assets/images/odoo-login-1.png)
+![odoo-login-1](../assets/images/odoo-login-1.png)
 
