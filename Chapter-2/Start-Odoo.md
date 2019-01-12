@@ -71,6 +71,8 @@ db_user = odoo
 
 选择好数据库之后，就可以进入到 Odoo 的登陆界面了，默认的管理员账号密码均为 `admin`。  
 
+为了在进入 Odoo 时防止每次都要显示数据库选择界面，我们将配置文件的 `db_name` 参数设置为我们的数据库名称，例如：`db_name=odoo`，或者在启动参数增加 `-d odoo`。  
+
 ![odoo-login-1](../assets/images/odoo-login-1.png)
 
 💡 为了方便的修改 Odoo 的配置文件，可以复制 ~/.odoorc 到项目根目录下如 ./odoorc.ini，执行时增加 `-c ./odoorc.ini` 参数指定配置文件。
