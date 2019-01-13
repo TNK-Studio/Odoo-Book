@@ -17,7 +17,7 @@
   * [安装应用](/Chapter-3/Instaing-Addon.md)
 * [模型 Model](/Chapter-4/Odoo-Model.md)
   * [定义数据模型](/Chapter-4/Model.md)
-  * [常见的 ORM 方法](/Chapter-4/Common-ORM-methods.md)
+  * [常用的 ORM 方法](/Chapter-4/Common-ORM-methods.md)
   * [多对一字段](/Chapter-4/Many2one-Field.md)
   * [一对多字段](/Chapter-4/One2many-Field.md)
   * [多对多字段](/Chapter-4/Many2many-Field.md)

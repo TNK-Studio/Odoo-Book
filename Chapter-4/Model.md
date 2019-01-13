@@ -54,6 +54,7 @@ class Bangumi(models.Model):
 我们在定义 name 字段使用了 fields.Char 相当于在 「bangumi.bangumi」所对应的数据库表 「bangumi_bangumi」定义了一个 name 的列，类型为 varchar，用于存放字符串，并且使用 `required=True`，将该列设置为不可为空。另外两种 fields.Integer 和 fields.Float 也是类似的道理。其次每个 field 的 string 属性是用于在视图中做字段名称的显示，同时会在数据库定义中作为 `COMMENT` 来解释字段的意义。  
 
 在字段定义中我们还利用了 `default` 属性设置了数据在创建时的默认值。  
+
 ⚠️ 这里要注意的是我们在 ORM 设置的 default 值并不会写入数据库表的定义中，如果在数据库中直接插入数据，这个默认值不会生效，必须要通过 ORM 的方式写入数据，默认值才会生效。  
 
 定义好模型后我们需要在 `models/__init__.py` 引入这个类或这个类所在的 py 文件。  
