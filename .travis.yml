@@ -16,7 +16,6 @@ install:
 - gitbook install
 
 script:
-- lint-md .
 - gitbook build . ./build
 - echo "http://odoobook.tnk-studio.org" > ./build/CNAME
 

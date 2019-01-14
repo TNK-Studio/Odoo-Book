@@ -40,7 +40,7 @@ Out[9]: 'Anime'
 
 可以看到 category_id 字段已经成功关联了，那么我们怎么从 `Anime` 这个类别访问到它底下的所有 `bangumi` 呢？    
 
-这时候就需要在 Category 模型下定义一个 `One2Many` 字段来反向关联到 Bangumi模型。  
+这时候就需要在 Category 模型下定义一个 `One2Many` 字段来反向关联到 Bangumi 模型。  
 
 ```python
 class Category(models.Model):
