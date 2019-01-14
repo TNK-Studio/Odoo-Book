@@ -17,7 +17,8 @@ $ sudo apt-get install postgresql-9.6 -y
 ### Ubuntu 14.04 16.04
 
 ```shell
-$ apt-get install lsb-release software-properties-common -y
+$ sudo apt-get update
+$ sudo apt-get install lsb-release software-properties-common -y
 $ sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main"
 $ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 $ sudo apt-get update
