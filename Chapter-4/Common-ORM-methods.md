@@ -52,6 +52,8 @@ Out[2]: bangumi.bangumi()
     Out[6]: 'Fate'
     In [7]: env['bangumi.bangumi'].search([('total', '=', 24)], limit=2)
     Out[7]: bangumi.bangumi(1, 2)
+    In [8]: env['bangumi.bangumi'].search([])
+    Out[8]: bangumi.bangumi(1, 2, 3)
     ```
 
 * **write()**
@@ -59,9 +61,9 @@ Out[2]: bangumi.bangumi()
     `write` 方法用于修改数据，传入参数为 `dict` 类型，修改后会返回布尔值 `True`。
     
     ```plain
-    In [8]: env['bangumi.bangumi'].search([('name', '=', 'SAO')]).write({'total': 12})
-    Out[8]: True
-    In [9]: env.cr.commit()
+    In [9]: env['bangumi.bangumi'].search([('name', '=', 'SAO')]).write({'total': 12})
+    Out[9]: True
+    In [10]: env.cr.commit()
     ```
 
 * **browse()**
@@ -69,11 +71,11 @@ Out[2]: bangumi.bangumi()
     `browse` 方法可以通过 `id` 直接返回数据或结果集，参数可以为 `dict` 或 `list` 类型。
     
     ```plain
-    In [10]: env['bangumi.bangumi'].browse(1)
-    Out[10]: bangumi.bangumi(1,)
-    In [11]: records = env['bangumi.bangumi'].browse([1, 2, 3])
-    In [12]: records                       
-    Out[12]: bangumi.bangumi(1, 2, 3)
+    In [11]: env['bangumi.bangumi'].browse(1)
+    Out[11]: bangumi.bangumi(1,)
+    In [12]: records = env['bangumi.bangumi'].browse([1, 2, 3])
+    In [13]: records                       
+    Out[13]: bangumi.bangumi(1, 2, 3)
     ```
 
 * **unlink()**
@@ -81,9 +83,9 @@ Out[2]: bangumi.bangumi()
     `unlink` 方法用于用于删除数据或结果集，删除后返回布尔值 `True`，结果集可以为空，相当于没有操作。  
     
     ```plain
-    In [13]: env['bangumi.bangumi'].search([{'name': 'Jojo'}]).unlink()
-    Out[13]: True 
-    In [14]: env.cr.commit()
+    In [14]: env['bangumi.bangumi'].search([{'name': 'Jojo'}]).unlink()
+    Out[14]: True 
+    In [15]: env.cr.commit()
     ```
 
 * **exists()**
@@ -93,15 +95,15 @@ Out[2]: bangumi.bangumi()
     在上文中我们用 browse 方法搜索出了记录集 `records`。  
     
     ```plain
-    In [15]: records                       
-    Out[15]: bangumi.bangumi(1, 2, 3)
+    In [16]: records                       
+    Out[16]: bangumi.bangumi(1, 2, 3)
     ```
     
     但是实际上 id 为`3`的数据已经被我们删除了，我们一般会觉得需要重新使用 `search` 方法搜索数据，这里我们可以利用 Odoo 的 exists 方法，他只会返回数据库中存在的数据或记录集。  
     
     ```plain
-    In [16]: records.exists()
-    Out[16]: bangumi.bangumi(1, 2,)
+    In [17]: records.exists()
+    Out[17]: bangumi.bangumi(1, 2,)
     ```
     
     利用这个函数我们可以在删除了一些数据后，用于判断数据或记录集是否为空。  
@@ -111,5 +113,7 @@ Out[2]: bangumi.bangumi()
         # do something ...
         pass
     ```
+   
+💡 搜索到的记录集中的数字代表记录的 `id`。
 
 
