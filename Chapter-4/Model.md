@@ -26,7 +26,7 @@ models
 ```python
 from odoo import models, fields, api
 
-class class Bangumi(models.Model):
+class Bangumi(models.Model):
     _name = 'bangumi.bangumi'
     _description = 'Bangumi'
 
