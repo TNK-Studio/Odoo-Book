@@ -75,5 +75,13 @@ db_user = odoo
 
 ![odoo-login-1](../assets/images/odoo-login-1.png)
 
-💡 为了方便的修改 Odoo 的配置文件，可以复制 ~/.odoorc 到项目根目录下如 ./odoorc.ini，执行时增加 `-c ./odoorc.ini` 参数指定配置文件。
+💡 为了方便的修改 Odoo 的配置文件，可以复制 ~/.odoorc 到项目根目录下如 ./odoorc.ini，执行时增加 `-c ./odoorc.ini` 参数指定配置文件。  
 
+⚠️ 若出现以下错误
+  ```shell
+  $ ERROR ? odoo.modules.loading: Database odoo not initialized, you can force it with `-i base` 
+  ```
+  则在启动参数添加 `-i base` 参数，他会初始化 odoo 的基础数据到 postgresql 中。
+  ```shell
+  $ ./odoo-bin -c ./odoorc.ini -d odoo -i base
+  ```

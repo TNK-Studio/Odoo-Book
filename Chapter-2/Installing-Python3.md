@@ -50,5 +50,5 @@ xz-utils tk-dev libffi-dev liblzma-dev libldap2-dev libsasl2-dev
 💡 若使用 `pyenv install 3.6.5` 安装速度过慢，可以先在搜狐的镜像下载源码包，放到 pyenv 的 cache 目录后在执行安装指定版本，例如：
 
 ```shell
-$ v=3.6.5;wget http://mirrors.sohu.com/python/$v/Python-$v.tar.xz -P ~/.pyenv/cache/;pyenv install $v  
+$ v=3.6.5;wget https://npm.taobao.org/mirrors/python/$v/Python-$v.tar.xz -P ~/.pyenv/cache/;pyenv install $v
 ```
