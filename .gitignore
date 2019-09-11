@@ -21,3 +21,5 @@ _book
 # CUSTOM
 build/
 .DS_Store
+.vscode/
+.history/
