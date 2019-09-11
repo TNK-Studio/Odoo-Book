@@ -3,7 +3,7 @@
 [![Odoo 12](https://img.shields.io/badge/Odoo-12-blue.svg)](https://github.com/odoo/odoo/tree/12.0)
 [![CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![](https://travis-ci.org/TNK-Studio/Odoo-Book.svg?branch=master)](https://travis-ci.org/TNK-Studio/Odoo-Book)
-[![](http://progressed.io/bar/22?title=progress)](https://tnk-studio.github.io/Odoo-Book/)
+[![](http://progressed.io/bar/25?title=progress)](https://tnk-studio.github.io/Odoo-Book/)
 
 ## 这本书适合什么样的人群
 
