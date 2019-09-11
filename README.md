@@ -23,32 +23,32 @@
 
 这本书包含十一章，主要包含以下部分：  
 
-[第一章](/Chapter-1/Odoo-Introduction.md)，*Odoo 框架介绍* —— 简单介绍 Odoo 框架背景，以及简单演示使用 Odoo 开发的应用。
+[第一章](https://odoobook.tnk-studio.org/Chapter-1/Odoo-Introduction.html)，*Odoo 框架介绍* —— 简单介绍 Odoo 框架背景，以及简单演示使用 Odoo 开发的应用。
 
-[第二章](/Chapter-2/Odoo-Development-Environment.md)，*Odoo 开发环境搭建* —— 从 Python 3 安装到 Odoo 源码获取一步一步搭建 Odoo 开发环境。
+[第二章](https://odoobook.tnk-studio.org/Chapter-2/Odoo-Development-Environment.html)，*Odoo 开发环境搭建* —— 从 Python 3 安装到 Odoo 源码获取一步一步搭建 Odoo 开发环境。
 
-[第三章](/Chapter-3/Create-Your-First-addon.md)，*创建第一个 Odoo 应用* —— 如何启动和配置 Odoo，并利用脚手架工具创建并安装我们的第一个应用程序。
+[第三章](https://odoobook.tnk-studio.org/Chapter-3/Create-Your-First-addon.html)，*创建第一个 Odoo 应用* —— 如何启动和配置 Odoo，并利用脚手架工具创建并安装我们的第一个应用程序。
 
-[第四章](/Chapter-4/Odoo-Model.md)，*模型 Model* —— 构建应用程序数据，介绍框架的对象关系映射（ORM），以及 ORM API 和可用的不同类型的模型以及字段类型，
+[第四章](https://odoobook.tnk-studio.org/Chapter-4/Odoo-Model.html)，*模型 Model* —— 构建应用程序数据，介绍框架的对象关系映射（ORM），以及 ORM API 和可用的不同类型的模型以及字段类型，
 包括关系字段和计算字段。
 
-[第五章](/Chapter-5/Odoo-Menu.md)，*菜单 Menu* —— 介绍 Odoo 组成应用的菜单部分，并且利用 XML 配置我们的第一个菜单。
+[第五章](https://odoobook.tnk-studio.org/Chapter-5/Odoo-Menu.html)，*菜单 Menu* —— 介绍 Odoo 组成应用的菜单部分，并且利用 XML 配置我们的第一个菜单。
 
-[第六章](/Chapter-6/Odoo-View.md)，*视图 View* —— 创建应用程序的视图部分，如最基本的列表、表单和搜索视图，以及看板视图。
+[第六章](https://odoobook.tnk-studio.org/Chapter-6/Odoo-View.html)，*视图 View* —— 创建应用程序的视图部分，如最基本的列表、表单和搜索视图，以及看板视图。
 
-[第七章](/Chapter-7/Odoo-Action.md)，*动作 Action* —— 利用动作关联菜单，实现进入到应用视图部分的功能，并利用最常见的几种动作实现相关的功能。  
+[第七章](https://odoobook.tnk-studio.org/Chapter-7/Odoo-Action.html)，*动作 Action* —— 利用动作关联菜单，实现进入到应用视图部分的功能，并利用最常见的几种动作实现相关的功能。  
 
-[第八章](/Chapter-8/Odoo-Cron.md)，*计划任务 Cron* —— 明白计划任务可以实现的功能，并利用计划任务实现定时消息通知。
+[第八章](https://odoobook.tnk-studio.org/Chapter-8/Odoo-Cron.html)，*计划任务 Cron* —— 明白计划任务可以实现的功能，并利用计划任务实现定时消息通知。
 
-[第九章](/Chapter-9/Odoo-Access-Control.md)，*权限控制 Access Control* —— 了解 Odoo 的常用几种权限控制的粗细粒度，包括权限组、菜单权限、模型权限和数据集权限，
+[第九章](https://odoobook.tnk-studio.org/Chapter-9/Odoo-Access-Control.html)，*权限控制 Access Control* —— 了解 Odoo 的常用几种权限控制的粗细粒度，包括权限组、菜单权限、模型权限和数据集权限，
 通过实际的应用场景将权限应用结合并且实现。
 
-[第十章](/Chapter-10/Odoo-Web-Controller.md)，*Web 控制器 Web Controller* —— 作为一个 Web 框架，肯定包含请求 (Request) 和响应（Response）的处理，
+[第十章](https://odoobook.tnk-studio.org/Chapter-10/Odoo-Web-Controller.html)，*Web 控制器 Web Controller* —— 作为一个 Web 框架，肯定包含请求 (Request) 和响应（Response）的处理，
 利用 Odoo 的 Web 控制器实现简单的接口，并且结合 Jinja2 模版引擎渲染一个简单的非 Odoo 视图的 Web 页面。
 
-[第十一章](/Chapter-11/Odoo-QWeb.md)，*模版引擎 QWeb* —— QWeb 是一个网页框架，在 Odoo 8 中被初次使用，XML 模板引擎是它的核心，这一章节我们将学习 QWeb 的基础语法，并替换 Jinja2 模版引擎渲染的 Web 页面。  
+[第十一章](https://odoobook.tnk-studio.org/Chapter-11/Odoo-QWeb.html)，*模版引擎 QWeb* —— QWeb 是一个网页框架，在 Odoo 8 中被初次使用，XML 模板引擎是它的核心，这一章节我们将学习 QWeb 的基础语法，并替换 Jinja2 模版引擎渲染的 Web 页面。  
 
-[第十二章](/Chapter-12/Odoo-i18n.md)，*国际化 i18n* ——  为了能让我们的应用支持多语言，Odoo 也提供了国际化的解决方案，这一章节我们将学习如何让自己的应用实现国际化。
+[第十二章](https://odoobook.tnk-studio.org/Chapter-12/Odoo-i18n.html)，*国际化 i18n* ——  为了能让我们的应用支持多语言，Odoo 也提供了国际化的解决方案，这一章节我们将学习如何让自己的应用实现国际化。
 
 ## 文本约定
 
