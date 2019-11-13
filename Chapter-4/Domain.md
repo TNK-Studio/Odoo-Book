@@ -1,6 +1,6 @@
 # 过滤表达式 Domain
 
-在[常用的的 ORM 方法](/Chapter-4/Common-ORM-methods.md)章节中提到了 `search` 查询方法，这一章节就大概的讲解一下，Odoo 的 `Domain` 过滤表达式。  
+在[常用的 ORM 方法](/Chapter-4/Common-ORM-methods.md)章节中提到了 `search` 查询方法，这一章节就大概的讲解一下，Odoo 的 `Domain` 过滤表达式。  
 
 `Domain` 是一个列表类型的参数，他的每一个元素可以是一个三个元素组成的元组 '(`字段名`, `运算符`, `值`)'，或者是 `|` (或)、 `&` 运算符, 例如：  
 

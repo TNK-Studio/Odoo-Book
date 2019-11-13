@@ -29,6 +29,8 @@
   * [列表视图 ListView](/Chapter-6/ListView.md)
   * [表单视图 FormView](/Chapter-6/FormView.md)
   * [搜索视图 SearchView](/Chapter-6/SearchView.md)
+  * [看板视图 KanbanView](/Chapter-6/KanbanView.md)
+  * [小结](/Chapter-6/Summary.md)
 * [动作 Action](/Chapter-7/Odoo-Action.md)
   * [窗口动作](/Chapter-7/Action-Window.md)
   * [服务器动作](/Chapter-7/Action-Server.md)
