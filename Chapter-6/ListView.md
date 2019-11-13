@@ -77,3 +77,5 @@ views
 升级完成后重新打开或刷新页面就可以看到效果了。
 
 ![list-view-2](../assets/images/list-view-2.png)
+
+⚠️ `List View` 也叫 `Tree View`，后文所有提到 `Tree` 视图的部分就是列表视图。
