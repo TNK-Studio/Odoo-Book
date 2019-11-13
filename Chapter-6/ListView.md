@@ -21,8 +21,8 @@ views
 ```xml
 <odoo>
     <data>
-        <record model="ir.ui.view" id="bangumi.bangumi_list_view">
-            <field name="name">bangumi list</field>
+        <record model="ir.ui.view" id="view_bangumi_bangumi_list">
+            <field name="name">bangumi.list</field>
             <field name="model">bangumi.bangumi</field>
             <field name="arch" type="xml">
                 <tree>
@@ -68,7 +68,7 @@ views
     name="Bangumi"
     res_model="bangumi.bangumi"
     view_mode="tree,kanban,form"
-    view_id="bangumi.bangumi_list_view"
+    view_id="view_bangumi_bangumi_list"
 />
 ```
 
