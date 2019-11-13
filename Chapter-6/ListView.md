@@ -29,12 +29,12 @@ views
                     <field name="name"/>
                     <field name="category_id"/>
                     <field name="tag_ids" widget="many2many_tags"/>
-                    <field name="update_cycle"/>
+                    <field name="score"/>
                     <field name="current"/>
                     <field name="total"/>
                     <field name="already_seen"/>
-                    <field name="score"/>
                     <field name="release_date"/>
+                    <field name="update_cycle"/>
                 </tree>
             </field>
         </record>
