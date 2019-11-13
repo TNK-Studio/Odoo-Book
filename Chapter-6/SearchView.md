@@ -13,8 +13,8 @@ odoo 虽然默认支持搜索，但是搜索功能很不友好，在输入提示
 所以接下来我们要使用 `Search View` （搜索视图）来完善搜索功能。同样的我们需要在 `views.xml` 下定义该视图，以下是定义。  
 
 ```xml
-<record model="ir.ui.view" id="bangumi.bangumi_search_view">
-<field name="name">bangumi search</field>
+<record model="ir.ui.view" id="view_bangumi_bangumi_search">
+<field name="name">bangumi.search</field>
 <field name="model">bangumi.bangumi</field>
 <field name="arch" type="xml">
     <search>
@@ -29,8 +29,8 @@ odoo 虽然默认支持搜索，但是搜索功能很不友好，在输入提示
 `Search View` 与之前的定义不同的地方也是 `<search></search>`，然后需要在 `<search>` 标签中间添加你需要搜索提示的字段。Odoo 默认会使用这些字段的 `name` 字段作为搜索，当然一些情况下你可能不一定以外键字段的 `name` 字段作为搜索条件，这时候你就需要显式指定了。  
 
 ```xml
-<record model="ir.ui.view" id="bangumi.bangumi_search_view">
-<field name="name">bangumi search</field>
+<record model="ir.ui.view" id="view_bangumi_bangumi_search">
+<field name="name">bangumi.search</field>
 <field name="model">bangumi.bangumi</field>
 <field name="arch" type="xml">
     <search>
