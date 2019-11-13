@@ -79,7 +79,10 @@ access_bangumi_tag,bangumi.tag,model_bangumi_tag,base.group_user,1,1,1,1
 
 ![create-menu-2](../assets/images/create-menu-2.png)
 
-⚠️ 如果说在做完上述步骤后还不能看到菜单，可以尝试 `gif` 中的步骤，切换客户端语言。  
+⚠️ 如果说在做完上述步骤后还不能看到菜单，可以尝试 `gif` 中的步骤，切换客户端语言。
+
+1. 点击右上角用户信息
+2. 切换语言后保存
 
 ![create-menu-3](../assets/images/create-menu-3.gif)
 
