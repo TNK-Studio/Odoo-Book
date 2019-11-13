@@ -11,8 +11,8 @@
 Form 视图定义的位置跟 Tree 视图定义的位置一样，这里就不讲整个文件贴出来了，只贴 Form 视图定义的部分。  
 
 ```xml
-<record model="ir.ui.view" id="bangumi.bangumi_form_view">
-    <field name="name">bangumi form</field>
+<record model="ir.ui.view" id="view_bangumi_bangumi_form">
+    <field name="name">bangumi.form</field>
     <field name="model">bangumi.bangumi</field>
     <field name="arch" type="xml">
         <form>
