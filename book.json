@@ -1,42 +1,46 @@
 {
-  "title": "Odoo 小书",
-  "description": "",
-  "language": "zh-hans",
-  "plugins": [
-    "anchor-navigation-ex",
-    "-lunr",
-    "-search",
-    "search-plus",
-    "expandable-chapters",
-    "-sharing",
-    "github-buttons",
-    "editlink",
-    "-highlight",
-    "splitter",
-    "custom-favicon"
-  ],
-  "pluginsConfig": {
-    "fontsettings": {
-      "theme": "sepia",
-      "family": "sans",
-      "size": 2
-    },
-    "anchor-navigation-ex": {
-      "showLevel": false
-    },
-    "github-buttons": {
-      "buttons": [{
-        "user": "TNK-Studio",
-        "repo": "Odoo-Book",
-        "type": "star",
-        "size": "large",
-        "count": true
-      }]
-    },
-    "editlink": {
-      "base": "https://github.com/TNK-Studio/Odoo-Book/edit/master",
-      "label": "编辑本页"
-    },
-    "favicon": "assets/images/favicon.ico"
-  }
+    "title": "Odoo 小书",
+    "description": "",
+    "language": "zh-hans",
+    "plugins": [
+        "anchor-navigation-ex",
+        "-lunr",
+        "-search",
+        "search-plus",
+        "expandable-chapters",
+        "-sharing",
+        "github-buttons",
+        "editlink",
+        "-highlight",
+        "splitter",
+        "custom-favicon",
+        "ga"
+    ],
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "sans",
+            "size": 2
+        },
+        "anchor-navigation-ex": {
+            "showLevel": false
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "TNK-Studio",
+                "repo": "Odoo-Book",
+                "type": "star",
+                "size": "large",
+                "count": true
+            }]
+        },
+        "editlink": {
+            "base": "https://github.com/TNK-Studio/Odoo-Book/edit/master",
+            "label": "编辑本页"
+        },
+        "favicon": "assets/images/favicon.ico",
+        "ga": {
+            "token": "UA-126817847-4"
+        }
+    }
 }
