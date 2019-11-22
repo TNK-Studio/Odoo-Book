@@ -10,6 +10,7 @@
     "gitbook-plugin-disqus": "^0.1.0",
     "gitbook-plugin-editlink": "^1.0.2",
     "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-ga": "^2.0.0",
     "gitbook-plugin-github-buttons": "^3.0.0",
     "gitbook-plugin-prism": "^2.4.0",
     "gitbook-plugin-search-plus": "^1.0.3",

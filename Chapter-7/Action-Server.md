@@ -71,16 +71,16 @@ class IrActionsServer(models.Model):
 
 可以从 `state` 字段看到 `action` 可以做如下几个事情：  
 
-* code - Execute Python Code  
+* **code** - Execute Python Code  
     执行一段 Python 代码  
 
-* object_create - Create a new Record  
+* **object_create** - Create a new Record  
     创建一条数据  
 
-* object_write - Update the Record  
+* **object_write** - Update the Record  
     更新数据  
 
-* multi - Execute several actions  
+* **multi** - Execute several actions  
     执行一系列的动作  
 
 如果我们要实现前面提到的功能，我们就需要用到 `code` 类型的服务器动作，来执行我们定义的 `like` 和 `unlike` 函数，于是我们就可以定义出这个服务器动作。  
