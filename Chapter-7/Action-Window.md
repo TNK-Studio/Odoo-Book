@@ -33,7 +33,7 @@
 
 接下来我们就可以利用这个关键字和全文检索在 Odoo 的源码中找到他。  
 
-⚠️ 可能很多人还不知道怎么做全文检索，这里简单说一下。如果你是用的是 `Pycharm`，可以点击 Odoo 源码文件夹的主目录，右键选择 `Find in Path` 或者使用快捷键 `ctrl + shift + F` （`command + shift + F`）进行全文检索。如果你是用的是 `Vscode` 可以使用快捷键 `ctrl + shift + F` （`command + shift + F`）进行全文检索。其他工具请在搜索引擎搜索使用方法。  
+💡 可能很多人还不知道怎么做全文检索，这里简单说一下。如果你是用的是 `Pycharm`，可以点击 Odoo 源码文件夹的主目录，右键选择 `Find in Path` 或者使用快捷键 `ctrl + shift + F` （`command + shift + F`）进行全文检索。如果你是用的是 `Vscode` 可以使用快捷键 `ctrl + shift + F` （`command + shift + F`）进行全文检索。其他工具请在搜索引擎搜索使用方法。  
 
 由于直接搜索 `ir.actions.act_window` 出现的关键字可能比较多，我们使用 `_name = 'ir.actions.act_window'` 关键字进行搜索。  
 
