@@ -34,7 +34,7 @@
 * [动作 Action](/Chapter-7/Odoo-Action.md)
   * [窗口动作](/Chapter-7/Action-Window.md)
   * [服务器动作](/Chapter-7/Action-Server.md)
-  * [客户端动作](/Chapter-7/Action-Client.md)
+  <!-- * [客户端动作](/Chapter-7/Action-Client.md) -->
 * [计划任务 Cron](/Chapter-8/Odoo-Cron.md)
 * [权限控制 Access Control](/Chapter-9/Odoo-Access-Control.md)
   * [权限组](/Chapter-9/Permission-Group.md)
