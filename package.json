@@ -5,6 +5,7 @@
   "main": "mdlint.js",
   "dependencies": {
     "file-system": "^2.2.2",
+    "gitbook-plugin-adsense": "^1.0.3",
     "gitbook-plugin-anchor-navigation-ex": "^1.0.13",
     "gitbook-plugin-custom-favicon": "^0.0.4",
     "gitbook-plugin-disqus": "^0.1.0",
