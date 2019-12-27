@@ -47,8 +47,7 @@
             "client": "ca-pub-9999308390903216",
             "slot": "9999308390903216",
             "format": "auto",
-            "element": ".page-inner section",
-            "position": "top"
+            "element": ".page-inner section"
         }
     }
 }
