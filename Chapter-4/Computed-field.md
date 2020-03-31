@@ -28,7 +28,7 @@ class Bangumi(models.Model):
         ('quarterly', 'Update quarterly')
     ], string='Update cycle', required=True, default='weekly')
 
-    release_time = fields.Date(string='Release date', default=fields.Date.today(), required=True)
+    release_date = fields.Date(string='Release date', default=fields.Date.today(), required=True)
 ```
 
 其中 `update_cycle` 使用了一个选择字段，相当于这个字段的值只能是 `weekly`、`monthly` 或者 `quarterly`，并且值所在的元组的第二个元素则是他们具体显示的值。  
