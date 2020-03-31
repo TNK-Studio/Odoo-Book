@@ -1,0 +1,982 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>表单视图 FormView · Odoo 小书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="SearchView.html" />
+    
+    
+    <link rel="prev" href="ListView.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TNK-Studio","repo":"Odoo-Book","type":"star","size":"large","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1/Odoo-Introduction.html">
+            
+                <a href="../Chapter-1/Odoo-Introduction.html">
+            
+                    
+                    Odoo 框架介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter-1/Background-Introduction.html">
+            
+                <a href="../Chapter-1/Background-Introduction.html">
+            
+                    
+                    Odoo 背景介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter-1/Odoo-Demonstration.html">
+            
+                <a href="../Chapter-1/Odoo-Demonstration.html">
+            
+                    
+                    Odoo 开发的应用简单演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter-2/Odoo-Development-Environment.html">
+            
+                <a href="../Chapter-2/Odoo-Development-Environment.html">
+            
+                    
+                    Odoo 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter-2/Installing-Git.html">
+            
+                <a href="../Chapter-2/Installing-Git.html">
+            
+                    
+                    安装 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter-2/Installing-PostgreSQL.html">
+            
+                <a href="../Chapter-2/Installing-PostgreSQL.html">
+            
+                    
+                    安装 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter-2/Installing-Node.js-and-LESS.html">
+            
+                <a href="../Chapter-2/Installing-Node.js-and-LESS.html">
+            
+                    
+                    安装 Node.js 和 LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter-2/Get-Odoo-Source.html">
+            
+                <a href="../Chapter-2/Get-Odoo-Source.html">
+            
+                    
+                    获取 Odoo 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter-2/Installing-Python3.html">
+            
+                <a href="../Chapter-2/Installing-Python3.html">
+            
+                    
+                    安装 Python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Chapter-2/Use-Pipenv-Installing-Dependencies.html">
+            
+                <a href="../Chapter-2/Use-Pipenv-Installing-Dependencies.html">
+            
+                    
+                    使用 pipenv 安装依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Chapter-2/Start-Odoo.html">
+            
+                <a href="../Chapter-2/Start-Odoo.html">
+            
+                    
+                    启动 Odoo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3/Create-Your-First-addon.html">
+            
+                <a href="../Chapter-3/Create-Your-First-addon.html">
+            
+                    
+                    创建第一个 Odoo 应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter-3/Odoo-Scaffold.html">
+            
+                <a href="../Chapter-3/Odoo-Scaffold.html">
+            
+                    
+                    使用脚手架创建应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter-3/Instaing-Addon.html">
+            
+                <a href="../Chapter-3/Instaing-Addon.html">
+            
+                    
+                    安装应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4/Odoo-Model.html">
+            
+                <a href="../Chapter-4/Odoo-Model.html">
+            
+                    
+                    模型 Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chapter-4/Model.html">
+            
+                <a href="../Chapter-4/Model.html">
+            
+                    
+                    定义数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chapter-4/Common-ORM-methods.html">
+            
+                <a href="../Chapter-4/Common-ORM-methods.html">
+            
+                    
+                    常用的 ORM 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chapter-4/Many2one-Field.html">
+            
+                <a href="../Chapter-4/Many2one-Field.html">
+            
+                    
+                    Many2one 多对一字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chapter-4/One2many-Field.html">
+            
+                <a href="../Chapter-4/One2many-Field.html">
+            
+                    
+                    One2many 一对多字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Chapter-4/Many2many-Field.html">
+            
+                <a href="../Chapter-4/Many2many-Field.html">
+            
+                    
+                    Many2many 多对多字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Chapter-4/Computed-field.html">
+            
+                <a href="../Chapter-4/Computed-field.html">
+            
+                    
+                    计算字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../Chapter-4/Domain.html">
+            
+                <a href="../Chapter-4/Domain.html">
+            
+                    
+                    过滤表达式 Domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5/Odoo-Menu.html">
+            
+                <a href="../Chapter-5/Odoo-Menu.html">
+            
+                    
+                    菜单 Menu
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter-5/Creation-Menu.html">
+            
+                <a href="../Chapter-5/Creation-Menu.html">
+            
+                    
+                    菜单创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Odoo-View.html">
+            
+                <a href="Odoo-View.html">
+            
+                    
+                    视图 View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="ListView.html">
+            
+                <a href="ListView.html">
+            
+                    
+                    列表视图 ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="FormView.html">
+            
+                <a href="FormView.html">
+            
+                    
+                    表单视图 FormView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="SearchView.html">
+            
+                <a href="SearchView.html">
+            
+                    
+                    搜索视图 SearchView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="KanbanView.html">
+            
+                <a href="KanbanView.html">
+            
+                    
+                    看板视图 KanbanView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="Summary.html">
+            
+                <a href="Summary.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7/Odoo-Action.html">
+            
+                <a href="../Chapter-7/Odoo-Action.html">
+            
+                    
+                    动作 Action
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Chapter-7/Action-Window.html">
+            
+                <a href="../Chapter-7/Action-Window.html">
+            
+                    
+                    窗口动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Chapter-7/Action-Server.html">
+            
+                <a href="../Chapter-7/Action-Server.html">
+            
+                    
+                    服务器动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Chapter-7/Action-Url.html">
+            
+                <a href="../Chapter-7/Action-Url.html">
+            
+                    
+                    URL 动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Chapter-7/Action-Client.html">
+            
+                <a href="../Chapter-7/Action-Client.html">
+            
+                    
+                    客户端动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8/Odoo-Cron.html">
+            
+                <a href="../Chapter-8/Odoo-Cron.html">
+            
+                    
+                    计划任务 Cron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9/Odoo-Access-Control.html">
+            
+                <a href="../Chapter-9/Odoo-Access-Control.html">
+            
+                    
+                    权限控制 Access Control
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Chapter-9/Permission-Group.html">
+            
+                <a href="../Chapter-9/Permission-Group.html">
+            
+                    
+                    权限组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Chapter-9/Menu-Permission.html">
+            
+                <a href="../Chapter-9/Menu-Permission.html">
+            
+                    
+                    菜单权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Chapter-9/Model-Permission.html">
+            
+                <a href="../Chapter-9/Model-Permission.html">
+            
+                    
+                    模型权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Chapter-9/DataSet-Permission.html">
+            
+                <a href="../Chapter-9/DataSet-Permission.html">
+            
+                    
+                    数据集权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10/Odoo-Web-Controller.html">
+            
+                <a href="../Chapter-10/Odoo-Web-Controller.html">
+            
+                    
+                    Web 控制器 Web Controller
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Chapter-10/Route-Control.html">
+            
+                <a href="../Chapter-10/Route-Control.html">
+            
+                    
+                    路由控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Chapter-10/Request.html">
+            
+                <a href="../Chapter-10/Request.html">
+            
+                    
+                    请求参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Chapter-10/Reponse.html">
+            
+                <a href="../Chapter-10/Reponse.html">
+            
+                    
+                    响应内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Chapter-10/Jinja2.html">
+            
+                <a href="../Chapter-10/Jinja2.html">
+            
+                    
+                    结合 Jinja2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11/Odoo-QWeb.html">
+            
+                <a href="../Chapter-11/Odoo-QWeb.html">
+            
+                    
+                    模版引擎 QWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12/Odoo-i18n.html">
+            
+                <a href="../Chapter-12/Odoo-i18n.html">
+            
+                    
+                    国际化 i18n
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >表单视图 FormView</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8868;&#x5355;&#x89C6;&#x56FE;-form-view"><b></b>&#x8868;&#x5355;&#x89C6;&#x56FE; Form View</a></li></ul></div><a href="#&#x8868;&#x5355;&#x89C6;&#x56FE;-form-view" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8868;&#x5355;&#x89C6;&#x56FE;-form-view"><a name="&#x8868;&#x5355;&#x89C6;&#x56FE;-form-view" class="anchor-navigation-ex-anchor" href="#&#x8868;&#x5355;&#x89C6;&#x56FE;-form-view"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8868;&#x5355;&#x89C6;&#x56FE; Form View</h1>
+<p>&#x4E0A;&#x4E00;&#x8282;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x89C6;&#x56FE;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8BD5;&#x8BD5;&#x6548;&#x679C;&#x4E86;&#x3002;  </p>
+<p>&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;&#x300C;&#x521B;&#x5EFA;&#x300D;&#x6309;&#x94AE;&#x8FDB;&#x5165;&#x7528;&#x4E8E;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x7684; <code>Form View</code> &#xFF08;&#x8868;&#x5355;&#x89C6;&#x56FE;&#xFF09;&#x3002;  </p>
+<p><img src="../assets/images/form-view-1.png" alt="form-view-1"></p>
+<p>&#x8FD9;&#x4E2A; Form &#x89C6;&#x56FE;&#x4E5F;&#x662F; odoo &#x9ED8;&#x8BA4;&#x751F;&#x6210;&#x7684;&#x89C6;&#x56FE;&#x3002;&#x5728;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x5C06;&#x8FD9;&#x4E2A;&#x89C6;&#x56FE;&#x5B9A;&#x4E49;&#x4E00;&#x4E0B;&#x5427;&#x3002; </p>
+<p>Form &#x89C6;&#x56FE;&#x5B9A;&#x4E49;&#x7684;&#x4F4D;&#x7F6E;&#x8DDF; Tree &#x89C6;&#x56FE;&#x5B9A;&#x4E49;&#x7684;&#x4F4D;&#x7F6E;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8BB2;&#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x8D34;&#x51FA;&#x6765;&#x4E86;&#xFF0C;&#x53EA;&#x8D34; Form &#x89C6;&#x56FE;&#x5B9A;&#x4E49;&#x7684;&#x90E8;&#x5206;&#x3002;  </p>
+<pre><code class="lang-xml">&lt;record model=&quot;ir.ui.view&quot; id=&quot;view_bangumi_bangumi_form&quot;&gt;
+    &lt;field name=&quot;name&quot;&gt;bangumi.form&lt;/field&gt;
+    &lt;field name=&quot;model&quot;&gt;bangumi.bangumi&lt;/field&gt;
+    &lt;field name=&quot;arch&quot; type=&quot;xml&quot;&gt;
+        &lt;form&gt;
+            &lt;sheet&gt;
+                &lt;group&gt;
+                    &lt;field name=&quot;name&quot;/&gt;
+                    &lt;field name=&quot;category_id&quot;/&gt;
+                    &lt;field name=&quot;tag_ids&quot; widget=&quot;many2many_tags&quot;/&gt;
+                    &lt;field name=&quot;score&quot;/&gt;
+                &lt;/group&gt;
+                &lt;group&gt;
+                    &lt;field name=&quot;current&quot;/&gt;
+                    &lt;field name=&quot;total&quot;/&gt;
+                    &lt;field name=&quot;already_seen&quot;/&gt;
+                    &lt;field name=&quot;release_date&quot;/&gt;
+                    &lt;field name=&quot;update_cycle&quot;/&gt;
+                &lt;/group&gt;
+            &lt;/sheet&gt;
+        &lt;/form&gt;
+    &lt;/field&gt;
+&lt;/record&gt;
+</code></pre>
+<p>&#x4E0E; Tree &#x89C6;&#x56FE;&#x4E0D;&#x540C;&#x7684;&#x662F; <code>&lt;tree&gt;&lt;/tree&gt;</code> &#x4FEE;&#x6539;&#x4E3A;&#x4E86; <code>&lt;form&gt;&lt;/form&gt;</code>&#x3002;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x5927;&#x81F4;&#x76F8;&#x540C;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
+<p>&#x7B2C; 6 &#x884C;&#x548C;&#x7B2C; 20 &#x884C;&#x7684; <code>&lt;sheet&gt;&lt;/sheet&gt;</code> &#x7684;&#x4F5C;&#x7528;&#x662F;&#x7ED9;&#x8868;&#x5355;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x300C;&#x5361;&#x7247;&#x300D;&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x53BB;&#x6389;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x3002;</p>
+<p><img src="../assets/images/form-view-2.png" alt="form-view-2">  </p>
+<p>&#x7B2C; 7 &#x884C;&#x548C;&#x7B2C; 12 &#x884C;&#x3001;&#x7B2C; 13 &#x884C;&#x548C; &#x7B2C; 19 &#x884C;&#x7684; <code>&lt;group&gt;&lt;/group&gt;</code> &#x4F5C;&#x7528;&#x662F;&#x7ED9;&#x5B57;&#x6BB5;&#x5206;&#x7EC4;&#x548C;&#x63D0;&#x4F9B;&#x524D;&#x9762;&#x7684;&#x5B57;&#x6BB5;&#x79F0;&#x663E;&#x793A;&#x3002;&#x540C;&#x6837;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x53BB;&#x6389;&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x3002;  </p>
+<p>&#x521B;&#x5EFA;&#x5E76;&#x66F4;&#x65B0;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6700;&#x7EC8;&#x6548;&#x679C;&#x5C31;&#x8DDF;&#x4E0A;&#x9762;&#x7684;&#x622A;&#x56FE;&#x4E00;&#x6837;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x5E76;&#x6CA1;&#x6709;&#x5C06; form &#x5173;&#x8054;&#x5230; <code>act_window</code>&#xFF0C;&#x56E0;&#x4E3A;&#x521B;&#x5EFA;&#x540E;&#x7684;<code>`form</code> &#x5C31;&#x6210;&#x4E3A;&#x4E86; <code>model</code> &#x7684;&#x9ED8;&#x8BA4;&#x8868;&#x5355;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x751F;&#x6548;&#xFF0C;&#x5F53;&#x7136; <code>tree</code> &#x89C6;&#x56FE;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4E0A;&#x4E00;&#x8282;&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x53EF;&#x4EE5;&#x663E;&#x5F0F;&#x6307;&#x5B9A; <code>view_id</code> &#x5F53;&#x7136;&#x4E0D;&#x6307;&#x5B9A;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x751F;&#x6548;&#x7684;&#x3002;  </p>
+<p>&#x5F53;&#x7136; <code>form</code> &#x4E5F;&#x53EF;&#x4EE5;&#x663E;&#x8BD5;&#x6307;&#x5B9A;&#xFF0C;&#x5728; <code>act_window</code> &#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x4E3A; <code>view_ids</code>&#xFF0C;&#x5B83;&#x7684;&#x6307;&#x5B9A;&#x65B9;&#x5F0F;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x6CE2;&#x5170;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5728;&#x5B98;&#x65B9;&#x7684;&#x6E90;&#x7801;&#x5168;&#x5C40;&#x641C;&#x7D22; <code>view_ids</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x793A;&#x4F8B;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x6F14;&#x793A;&#x4E86;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x6765;&#x5C1D;&#x8BD5;&#x521B;&#x5EFA;&#x4E00;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; &#x300A;&#x5200;&#x5251;&#x795E;&#x57DF; Alicization&#x7BC7; War of Underworld&#x300B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F60;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x559C;&#x6B22;&#x7684;&#x756A;&#x5267;&#xFF0C;&#x8BB0;&#x5F97;&#x70B9;&#x51FB;&#x4FDD;&#x5B58;&#x3002;  </p>
+<p>&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F60;&#x80AF;&#x5B9A;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;<code>Category</code> &#x548C; <code>Bangumi Tags</code> &#x7684;&#x521B;&#x5EFA;&#x8868;&#x5355;&#x4E5F;&#x662F;&#x9ED8;&#x8BA4;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5F53;&#x7136;&#x4F60;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x5B9A;&#x4E49;&#x4ED6;&#x4EEC;&#x7684; <code>form</code> &#x89C6;&#x56FE;&#x3002;  </p>
+<p>&#x6700;&#x540E;&#x6570;&#x636E;&#x521B;&#x5EFA;&#x7684;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x3002;  </p>
+<p><img src="../assets/images/form-view-3.png" alt="form-view-3">   </p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x539F;&#x672C;&#x6CA1;&#x6709;&#x586B;&#x5199;&#x7684; <code>Current</code> &#x503C;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E86;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x5728; <code>model</code> &#x4E2D;&#x5B9A;&#x4E49;&#x7684; <code>compute</code> &#x5B57;&#x6BB5;&#x8D77;&#x7684;&#x4F5C;&#x7528;&#x3002;  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ListView.html" class="navigation navigation-prev " aria-label="Previous page: 列表视图 ListView">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="SearchView.html" class="navigation navigation-next " aria-label="Next page: 搜索视图 SearchView">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"表单视图 FormView","level":"1.7.2","depth":2,"next":{"title":"搜索视图 SearchView","level":"1.7.3","depth":2,"path":"Chapter-6/SearchView.md","ref":"Chapter-6/SearchView.md","articles":[]},"previous":{"title":"列表视图 ListView","level":"1.7.1","depth":2,"path":"Chapter-6/ListView.md","ref":"Chapter-6/ListView.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","-lunr","-search","search-plus","expandable-chapters","-sharing","github-buttons","editlink","-highlight","splitter","custom-favicon","ga","adsense"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/TNK-Studio/Odoo-Book/edit/master"},"splitter":{},"adsense":{"client":"ca-pub-9999308390903216","slot":"9999308390903216","format":"auto","element":".page-inner section"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"assets/images/favicon.ico","github-buttons":{"buttons":[{"user":"TNK-Studio","repo":"Odoo-Book","type":"star","size":"large","count":true}]},"custom-favicon":{},"ga":{"configuration":"auto","token":"UA-126817847-4"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Odoo 小书","language":"zh-hans","gitbook":"*","description":""},"file":{"path":"Chapter-6/FormView.md","mtime":"2020-03-31T07:13:58.763Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-31T07:14:47.684Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

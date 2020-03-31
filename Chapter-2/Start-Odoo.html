@@ -1,0 +1,999 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>启动 Odoo · Odoo 小书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter-3/Create-Your-First-addon.html" />
+    
+    
+    <link rel="prev" href="Use-Pipenv-Installing-Dependencies.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TNK-Studio","repo":"Odoo-Book","type":"star","size":"large","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter-1/Odoo-Introduction.html">
+            
+                <a href="../Chapter-1/Odoo-Introduction.html">
+            
+                    
+                    Odoo 框架介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter-1/Background-Introduction.html">
+            
+                <a href="../Chapter-1/Background-Introduction.html">
+            
+                    
+                    Odoo 背景介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter-1/Odoo-Demonstration.html">
+            
+                <a href="../Chapter-1/Odoo-Demonstration.html">
+            
+                    
+                    Odoo 开发的应用简单演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Odoo-Development-Environment.html">
+            
+                <a href="Odoo-Development-Environment.html">
+            
+                    
+                    Odoo 环境搭建
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Installing-Git.html">
+            
+                <a href="Installing-Git.html">
+            
+                    
+                    安装 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Installing-PostgreSQL.html">
+            
+                <a href="Installing-PostgreSQL.html">
+            
+                    
+                    安装 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Installing-Node.js-and-LESS.html">
+            
+                <a href="Installing-Node.js-and-LESS.html">
+            
+                    
+                    安装 Node.js 和 LESS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Get-Odoo-Source.html">
+            
+                <a href="Get-Odoo-Source.html">
+            
+                    
+                    获取 Odoo 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Installing-Python3.html">
+            
+                <a href="Installing-Python3.html">
+            
+                    
+                    安装 Python3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Use-Pipenv-Installing-Dependencies.html">
+            
+                <a href="Use-Pipenv-Installing-Dependencies.html">
+            
+                    
+                    使用 pipenv 安装依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="Start-Odoo.html">
+            
+                <a href="Start-Odoo.html">
+            
+                    
+                    启动 Odoo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter-3/Create-Your-First-addon.html">
+            
+                <a href="../Chapter-3/Create-Your-First-addon.html">
+            
+                    
+                    创建第一个 Odoo 应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter-3/Odoo-Scaffold.html">
+            
+                <a href="../Chapter-3/Odoo-Scaffold.html">
+            
+                    
+                    使用脚手架创建应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter-3/Instaing-Addon.html">
+            
+                <a href="../Chapter-3/Instaing-Addon.html">
+            
+                    
+                    安装应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter-4/Odoo-Model.html">
+            
+                <a href="../Chapter-4/Odoo-Model.html">
+            
+                    
+                    模型 Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Chapter-4/Model.html">
+            
+                <a href="../Chapter-4/Model.html">
+            
+                    
+                    定义数据模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Chapter-4/Common-ORM-methods.html">
+            
+                <a href="../Chapter-4/Common-ORM-methods.html">
+            
+                    
+                    常用的 ORM 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Chapter-4/Many2one-Field.html">
+            
+                <a href="../Chapter-4/Many2one-Field.html">
+            
+                    
+                    Many2one 多对一字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Chapter-4/One2many-Field.html">
+            
+                <a href="../Chapter-4/One2many-Field.html">
+            
+                    
+                    One2many 一对多字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../Chapter-4/Many2many-Field.html">
+            
+                <a href="../Chapter-4/Many2many-Field.html">
+            
+                    
+                    Many2many 多对多字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../Chapter-4/Computed-field.html">
+            
+                <a href="../Chapter-4/Computed-field.html">
+            
+                    
+                    计算字段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../Chapter-4/Domain.html">
+            
+                <a href="../Chapter-4/Domain.html">
+            
+                    
+                    过滤表达式 Domain
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Chapter-5/Odoo-Menu.html">
+            
+                <a href="../Chapter-5/Odoo-Menu.html">
+            
+                    
+                    菜单 Menu
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter-5/Creation-Menu.html">
+            
+                <a href="../Chapter-5/Creation-Menu.html">
+            
+                    
+                    菜单创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter-6/Odoo-View.html">
+            
+                <a href="../Chapter-6/Odoo-View.html">
+            
+                    
+                    视图 View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Chapter-6/ListView.html">
+            
+                <a href="../Chapter-6/ListView.html">
+            
+                    
+                    列表视图 ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Chapter-6/FormView.html">
+            
+                <a href="../Chapter-6/FormView.html">
+            
+                    
+                    表单视图 FormView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Chapter-6/SearchView.html">
+            
+                <a href="../Chapter-6/SearchView.html">
+            
+                    
+                    搜索视图 SearchView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Chapter-6/KanbanView.html">
+            
+                <a href="../Chapter-6/KanbanView.html">
+            
+                    
+                    看板视图 KanbanView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Chapter-6/Summary.html">
+            
+                <a href="../Chapter-6/Summary.html">
+            
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter-7/Odoo-Action.html">
+            
+                <a href="../Chapter-7/Odoo-Action.html">
+            
+                    
+                    动作 Action
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Chapter-7/Action-Window.html">
+            
+                <a href="../Chapter-7/Action-Window.html">
+            
+                    
+                    窗口动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Chapter-7/Action-Server.html">
+            
+                <a href="../Chapter-7/Action-Server.html">
+            
+                    
+                    服务器动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../Chapter-7/Action-Url.html">
+            
+                <a href="../Chapter-7/Action-Url.html">
+            
+                    
+                    URL 动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../Chapter-7/Action-Client.html">
+            
+                <a href="../Chapter-7/Action-Client.html">
+            
+                    
+                    客户端动作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Chapter-8/Odoo-Cron.html">
+            
+                <a href="../Chapter-8/Odoo-Cron.html">
+            
+                    
+                    计划任务 Cron
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Chapter-9/Odoo-Access-Control.html">
+            
+                <a href="../Chapter-9/Odoo-Access-Control.html">
+            
+                    
+                    权限控制 Access Control
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Chapter-9/Permission-Group.html">
+            
+                <a href="../Chapter-9/Permission-Group.html">
+            
+                    
+                    权限组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Chapter-9/Menu-Permission.html">
+            
+                <a href="../Chapter-9/Menu-Permission.html">
+            
+                    
+                    菜单权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Chapter-9/Model-Permission.html">
+            
+                <a href="../Chapter-9/Model-Permission.html">
+            
+                    
+                    模型权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Chapter-9/DataSet-Permission.html">
+            
+                <a href="../Chapter-9/DataSet-Permission.html">
+            
+                    
+                    数据集权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Chapter-10/Odoo-Web-Controller.html">
+            
+                <a href="../Chapter-10/Odoo-Web-Controller.html">
+            
+                    
+                    Web 控制器 Web Controller
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Chapter-10/Route-Control.html">
+            
+                <a href="../Chapter-10/Route-Control.html">
+            
+                    
+                    路由控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Chapter-10/Request.html">
+            
+                <a href="../Chapter-10/Request.html">
+            
+                    
+                    请求参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Chapter-10/Reponse.html">
+            
+                <a href="../Chapter-10/Reponse.html">
+            
+                    
+                    响应内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Chapter-10/Jinja2.html">
+            
+                <a href="../Chapter-10/Jinja2.html">
+            
+                    
+                    结合 Jinja2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Chapter-11/Odoo-QWeb.html">
+            
+                <a href="../Chapter-11/Odoo-QWeb.html">
+            
+                    
+                    模版引擎 QWeb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Chapter-12/Odoo-i18n.html">
+            
+                <a href="../Chapter-12/Odoo-i18n.html">
+            
+                    
+                    国际化 i18n
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >启动 Odoo</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;-odoo"><b></b>&#x542F;&#x52A8; Odoo</a></li></ul></div><a href="#&#x542F;&#x52A8;-odoo" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x542F;&#x52A8;-odoo"><a name="&#x542F;&#x52A8;-odoo" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;-odoo"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8; Odoo</h1>
+<p>&#x5728;&#x6211;&#x4EEC;&#x62C9;&#x53D6;&#x7684;&#x6E90;&#x7801;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6709;&#x4E00;&#x4E2A; <code>odoo-bin</code> &#x7684; Python &#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F; Odoo &#x7684;&#x542F;&#x52A8;&#x811A;&#x672C;&#x3002;  </p>
+<p>&#x8FD0;&#x884C;&#x8BE5;&#x811A;&#x672C;&#x4E4B;&#x540E;&#x4F1A;&#x5728;<code>8069</code>&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x542F;&#x52A8; Odoo &#x670D;&#x52A1;&#xFF0C;&#x542F;&#x52A8;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x8FD0;&#x884C; <code>pipenv shell</code> &#x8FDB;&#x5165;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x3002;  </p>
+<p>&#x1F4A1; &#x5982;&#x679C;&#x662F;&#x7528; Pycharm &#x542F;&#x52A8;&#x9996;&#x5148;&#x9700;&#x8981;&#x5728; Preferences &gt; Project &gt; Project Interpreter &gt; Add &gt; Existing Environment &#x4E2D;
+&#x5C06;&#x4F7F;&#x7528; pipenv &#x751F;&#x6210;&#x7684; Python &#x6DFB;&#x52A0;&#x8FDB;&#x53BB;&#xFF0C;&#x4E00;&#x822C; pipenv &#x751F;&#x6210;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x76EE;&#x5F55;&#x5728; <code>~/.local/share/virtualenvs/</code>&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6309;&#x7167;<a href="Use-Pipenv-Installing-Dependencies.html">&#x4E0A;&#x4E00;&#x7BC7;</a>&#x751F;&#x6210;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;&#xFF0C;
+&#x5219;&#x76EE;&#x5F55;&#x5219;&#x4E3A; <code>~/.local/share/virtualenvs/odoo_env-*</code> (* &#x53F7;&#x4E3A;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;)&#x3002;</p>
+<p>&#x8FD0;&#x884C; Odoo &#x542F;&#x52A8;&#x811A;&#x672C;&#xFF1A;  </p>
+<pre><code class="lang-shell">$ pipenv shell
+$ ./odoo-bin
+2019-01-08 14:23:16,295 118 INFO ? odoo: Odoo version 12.0
+2019-01-08 14:23:16,296 118 INFO ? odoo: addons paths: [&apos;/root/.local/share/Odoo/addons/12.0&apos;, &apos;/root/odoo_dev/odoo/addons&apos;, &apos;/root/odoo_dev/addons&apos;]
+2019-01-08 14:23:16,296 118 INFO ? odoo: database: default@default:default
+2019-01-08 14:23:16,380 118 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports.
+2019-01-08 14:23:16,477 118 INFO ? odoo.service.server: HTTP service (werkzeug) running on 074d4c08f8b7:8069
+</code></pre>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;<a href="http://localhost:8069" target="_blank">http://localhost:8069</a>&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#xFF1A;  </p>
+<pre><code class="lang-plain">odoo.sql_db: Connection to the database failed
+...
+psycopg2.OperationalError: FATAL:  role &quot;xxx&quot; does not exist - - -
+</code></pre>
+<p>&#x51FA;&#x73B0;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x539F;&#x56E0;&#x662F;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5728; <code>Odoo &#x542F;&#x52A8;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</code> &#x91CC;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#xFF0C;&#x4F46;&#x662F; Odoo &#x7684;&#x542F;&#x52A8;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;&#x54EA;&#x91CC;&#x5462;&#x3002;  </p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x5165;&#xFF1A;  </p>
+<pre><code class="lang-shell">$ ./odoo-bin --help
+...
+  Common options:
+    -c CONFIG, --config=CONFIG
+                        specify alternate config file
+    -s, --save          save configuration to ~/.odoorc (or to
+                        ~/.openerp_serverrc if it exists)
+...
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4F7F;&#x7528; <code>-s</code> &#x6216; <code>--save</code> &#x53C2;&#x6570;&#xFF0C;Odoo &#x4F1A;&#x5728; <code>home</code> &#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210; <code>.odoorc</code> &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x7528; <code>-c</code> &#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x542F;&#x52A8;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;  </p>
+<p>&#x1F4A1; &#x82E5;&#x4E0D;&#x6307;&#x5B9A; Odoo &#x7684;&#x8FD0;&#x884C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14; <code>home</code> &#x76EE;&#x5F55;&#x4E0B;&#x5B58;&#x5728; <code>.odoorc</code> &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5219; Odoo &#x9ED8;&#x8BA4;&#x4F1A;&#x9009;&#x62E9;&#x8FD9;&#x4E2A;&#x4F5C;&#x4E3A;&#x542F;&#x52A8;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;  </p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5148;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;&#x5728; <code>Ctrl + C</code> &#x505C;&#x6B62; Odoo&#xFF1A;  </p>
+<pre><code class="lang-shell">$ ./odoo-bin -s
+...
+2019-01-08 14:37:57,127 152 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+</code></pre>
+<p>&#x7136;&#x540E;&#x7F16;&#x8F91; ~/.odoorc &#x6587;&#x4EF6;&#xFF0C;&#x5C06; <code>db_user</code> &#x548C; <code>db_password</code> &#x5206;&#x522B;&#x4FEE;&#x6539;&#x4E3A;&#x6211;&#x4EEC;&#x5728;<a href="Installing-PostgreSQL.html">&#x5B89;&#x88C5; PostgreSQL</a>&#x65F6;&#x8BBE;&#x7F6E;&#x7684;&#x7528;&#x6237; odoo &#x548C;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x3002;  </p>
+<pre><code class="lang-plain">...
+db_password = ****
+...
+db_user = odoo
+...
+</code></pre>
+<p>&#x518D;&#x6B21;&#x8FD0;&#x884C;&#x542F;&#x52A8;&#x811A;&#x672C;&#x542F;&#x52A8; Odoo&#xFF0C;&#x8FD9;&#x65F6;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x8BBF;&#x95EE; <a href="http://localhost:8069" target="_blank">http://localhost:8069</a> &#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x8FDB;&#x5165;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x9009;&#x62E9;&#x9875;&#x9762;&#xFF0C;
+&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x9009;&#x62E9; odoo &#x6570;&#x636E;&#x5E93;&#x6216;&#x8005;&#x70B9;&#x51FB; &#x300C;Manage Databases&#x300D;&#x8DF3;&#x8F6C;&#x5230;&#x6570;&#x636E;&#x5E93;&#x521B;&#x5EFA;&#x9875;&#x9762;&#x3002;  </p>
+<p><img src="../assets/images/odoo-database.png" alt="odoo-database"></p>
+<p>&#x9009;&#x62E9;&#x597D;&#x6570;&#x636E;&#x5E93;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x5230; Odoo &#x7684;&#x767B;&#x9646;&#x754C;&#x9762;&#x4E86;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x53F7;&#x5BC6;&#x7801;&#x5747;&#x4E3A; <code>admin</code>&#x3002;  </p>
+<p>&#x4E3A;&#x4E86;&#x5728;&#x8FDB;&#x5165; Odoo &#x65F6;&#x9632;&#x6B62;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;&#x9009;&#x62E9;&#x754C;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684; <code>db_name</code> &#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#x79F0;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>db_name=odoo</code>&#xFF0C;&#x6216;&#x8005;&#x5728;&#x542F;&#x52A8;&#x53C2;&#x6570;&#x589E;&#x52A0; <code>-d odoo</code>&#x3002;  </p>
+<p><img src="../assets/images/odoo-login-1.png" alt="odoo-login-1"></p>
+<p>&#x1F4A1; &#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x7684;&#x4FEE;&#x6539; Odoo &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x590D;&#x5236; ~/.odoorc &#x5230;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x5982; ./odoorc.ini&#xFF0C;&#x6267;&#x884C;&#x65F6;&#x589E;&#x52A0; <code>-c ./odoorc.ini</code> &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;  </p>
+<p>&#x26A0;&#xFE0F; &#x82E5;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;</p>
+<pre><code class="lang-shell">  $ ERROR ? odoo.modules.loading: Database odoo not initialized, you can force it with `-i base`
+</code></pre>
+<p>  &#x5219;&#x5728;&#x542F;&#x52A8;&#x53C2;&#x6570;&#x6DFB;&#x52A0; <code>-i base</code> &#x53C2;&#x6570;&#xFF0C;&#x4ED6;&#x4F1A;&#x521D;&#x59CB;&#x5316; odoo &#x7684;&#x57FA;&#x7840;&#x6570;&#x636E;&#x5230; postgresql &#x4E2D;&#x3002;</p>
+<pre><code class="lang-shell">  $ ./odoo-bin -c ./odoorc.ini -d odoo -i base
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Use-Pipenv-Installing-Dependencies.html" class="navigation navigation-prev " aria-label="Previous page: 使用 pipenv 安装依赖">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter-3/Create-Your-First-addon.html" class="navigation navigation-next " aria-label="Next page: 创建第一个 Odoo 应用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"启动 Odoo","level":"1.3.7","depth":2,"next":{"title":"创建第一个 Odoo 应用","level":"1.4","depth":1,"path":"Chapter-3/Create-Your-First-addon.md","ref":"Chapter-3/Create-Your-First-addon.md","articles":[{"title":"使用脚手架创建应用","level":"1.4.1","depth":2,"path":"Chapter-3/Odoo-Scaffold.md","ref":"Chapter-3/Odoo-Scaffold.md","articles":[]},{"title":"安装应用","level":"1.4.2","depth":2,"path":"Chapter-3/Instaing-Addon.md","ref":"Chapter-3/Instaing-Addon.md","articles":[]}]},"previous":{"title":"使用 pipenv 安装依赖","level":"1.3.6","depth":2,"path":"Chapter-2/Use-Pipenv-Installing-Dependencies.md","ref":"Chapter-2/Use-Pipenv-Installing-Dependencies.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","-lunr","-search","search-plus","expandable-chapters","-sharing","github-buttons","editlink","-highlight","splitter","custom-favicon","ga","adsense"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/TNK-Studio/Odoo-Book/edit/master"},"splitter":{},"adsense":{"client":"ca-pub-9999308390903216","slot":"9999308390903216","format":"auto","element":".page-inner section"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"assets/images/favicon.ico","github-buttons":{"buttons":[{"user":"TNK-Studio","repo":"Odoo-Book","type":"star","size":"large","count":true}]},"custom-favicon":{},"ga":{"configuration":"auto","token":"UA-126817847-4"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Odoo 小书","language":"zh-hans","gitbook":"*","description":""},"file":{"path":"Chapter-2/Start-Odoo.md","mtime":"2020-03-31T07:13:58.763Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-31T07:14:47.684Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-adsense/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
