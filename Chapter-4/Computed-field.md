@@ -47,21 +47,21 @@ class Bangumi(models.Model):
             today = fields.Date.today()
             dt = today - record.release_date
             if dt.days < 0:
-                self.current = 0
+                record.current = 0
                 continue
 
             if record.update_cycle == 'weekly':
                 current = round(dt.days / 7)
-                self.current = current if current < record.total else record.total
+                record.current = current if current < record.total else record.total
 
             if record.update_cycle == 'monthly':
                 month_dt = (today.year - record.release_date.year) * 12 + (today.month - record.release_date.month)
-                self.current = month_dt if month_dt < record.total else record.total
+                record.current = month_dt if month_dt < record.total else record.total
 
             if record.update_cycle == 'quarterly':
                 quarter_dt = (today.year - record.release_date.year) * 4 + (
                         math.ceil(today.month / 3) - math.ceil(record.release_date.month / 3))
-                self.current = quarter_dt if quarter_dt < record.total else record.total
+                record.current = quarter_dt if quarter_dt < record.total else record.total
 
     name = fields.Char(string='Name', required=True)
     current = fields.Integer(string='Current', compute='_compute_current')
