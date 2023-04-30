@@ -16,7 +16,7 @@
     "gitbook-plugin-prism": "^2.4.0",
     "gitbook-plugin-search-plus": "^1.0.3",
     "gitbook-plugin-splitter": "^0.0.8",
-    "markdownlint": "^0.11.0",
+    "markdownlint": "^0.28.2",
     "path": "^0.12.7"
   },
   "devDependencies": {},
